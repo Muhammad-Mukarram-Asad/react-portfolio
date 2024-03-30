@@ -1,0 +1,65 @@
+.experience_container{
+    margin: 4rem 0;
+    position: relative;
+}
+
+.experience_container >h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.arrow_right, .arrow_left{
+    width: 2.2rem;
+    height: 2.2rem;
+    color: #6751b9;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.65rem;
+    border: 1.5px solid #6751b9;
+    top: 56%;
+    cursor: pointer;
+    z-index: 2;
+    cursor: pointer;
+    background: #130f2a;
+}
+
+.arrow_left span, .arrow_right span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.arrow_left{
+    left: -1rem;
+}
+
+.arrow_right{
+    right: -1rem;
+}
+
+@media (max-width: 1025px)
+{
+    .arrow_left{
+        left: 0rem;
+    }
+
+    .arrow_right{
+        right: 0rem;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .experience_container >h5{
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
+    .arrow_left{
+        left: -1rem;
+    }
+
+    .arrow_right{
+        right: -1rem;
+    }
+}
