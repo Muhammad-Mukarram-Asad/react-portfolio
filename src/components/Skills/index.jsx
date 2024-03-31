@@ -10,7 +10,7 @@ const SkillSection = () => {
     setSelectedSkill(data);
   };
   return (
-    <main className={styles["skills_section"]}>
+    <main className={styles["skills_section"]} id='skills'>
             <h5>Technical Proficiency</h5>
             <section className={styles["skills_content"]}>
                 <div className={styles["skills"]}>

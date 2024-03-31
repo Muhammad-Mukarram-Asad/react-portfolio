@@ -31,16 +31,17 @@
 }
 
 .hero_content > h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
-    line-height: 5rem;
+    line-height: 4rem;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .hero_content > p{
-    font-size: 1rem;
+    font-size: 1.23rem;
     line-height: 2rem;
-    font-weight: 400;
+    font-weight: 500;
     width: 80%;
 }
 
@@ -50,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 5rem;
+    margin-top: 8rem;
 }
 
 .hero_img > div{
@@ -88,12 +89,13 @@
 @media (max-width: 1025px)
 {
     .hero_content > h2{
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-top: 6rem;
     }
     .hero_content > p{
-        font-size: 0.9rem;
-        line-height: 1.6rem;
+        font-size: 1.4rem;
+        line-height: 1.8rem
     }
     .hero_img > div > img{
         width: 20rem;
@@ -114,15 +116,23 @@
 {
     .hero_section{
         flex-direction: column;
-        margin-top: 16%;
+        margin-top: 2%;
     }
     .hero_img{
-        margin-top: 2rem 0;
+        margin-top: 3rem;
     }
    .hero_content h2,
    .hero_content p{
        text-align: center;
        width: auto;
+   }
+
+   .hero_content h2{
+    margin-top: 6rem;
+   }
+
+   .hero_content p{
+    margin-top: 3rem;
    }
    .hero_section::after,
    .hero_section::before{
@@ -146,19 +156,28 @@
 @media (max-width:400px)
 {
     .hero_section{
-        margin-top: 65%;
+        margin-top: 15%;
     }
     .hero_content > h2{
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+    line-height: 2.2rem;
+    text-align: left;
+
     }
 
     .hero_content > p{
-        font-size: 0.8rem;
-        line-height: 1.1rem;
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+       text-align: left;
+
     }
     .hero_img{
         gap: 0.8rem;
+    }
+
+    .hero_img > div{
+        gap: 1rem;
+        margin-left: 2.5rem;
     }
 
     .hero_img > div > img{
@@ -181,11 +200,13 @@
 @media (min-width: 401px) and (  max-width:600px)
 {
     .hero_section{
-        margin-top: 45%;
+        margin-top: 15%;
     }
     .hero_content > h2{
-        font-size: 2.2rem;
-        line-height: 3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 4rem;
+        width: 100%;
     }
 
     .hero_content > p{

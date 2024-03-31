@@ -32,7 +32,7 @@ const WorkExperience = () => {
     sliderRef.current.slickPrev();
   };
   return (
-    <div className={styles["experience_container"]}>
+    <div className={styles["experience_container"]} id="workExperience">
       <h5>Work Experience</h5>
       <div className={styles["experience_content"]}>
         <div className={styles["arrow_right"]}>

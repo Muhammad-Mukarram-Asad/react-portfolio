@@ -7,7 +7,7 @@ const ContactInfoCard = ({iconUrl,text}) => {
     <main className={styles["contact_detail_card"]}>
 
         <div className={styles["icon"]}>
-            <img src={iconUrl} alt='image' width={30} height={30} />
+            <img src={iconUrl} alt='contact_icons' width={30} height={30} />
         </div>
 
         <p>{text}</p>

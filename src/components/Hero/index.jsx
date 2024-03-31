@@ -7,10 +7,13 @@ const HeroSection = () => {
   return (
     <main className={styles["hero_section"]}>
       <section className={styles["hero_content"]}>
-        <h2>Building Digital Experiences That Inspire</h2>
+        <h2>Harmonizing Frontend Flair with Backend Brilliance 
+          for Exceptional Digital Experiences</h2>
         <p>
-          Passionate Frontend Developer | Transforming Ideas into Seamless and
-          Visually Stunning Web Solutions
+          Dedicated Full-Stack Developer | Crafting Innovative Solutions 
+          with a Harmonious Blend of Frontend Artistry and Backend Brilliance
+          {/* Passionate Frontend Developer | Transforming Ideas into Seamless and
+          Visually Stunning Web Solutions */}
         </p>
       </section>
 

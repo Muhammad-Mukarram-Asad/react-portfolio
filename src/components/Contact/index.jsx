@@ -5,7 +5,7 @@ import ContactForm from "./contactForm";
 // import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 const ContactMe = () => {
   return (
-    <main className={styles["contact_container"]}>
+    <main className={styles["contact_container"]} id="contact">
       <h5>ContactMe</h5>
       <section className={styles["contact_content"]}>
         <div style={{ flex: 1 }}>
