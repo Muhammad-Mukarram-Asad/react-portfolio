@@ -46,6 +46,42 @@ export const SKILLS = [
 
 export const WorkExperienceData = [
   {
+    title: "Junior Full Stack Developer",
+    company: "Hysab Kytab (Pakistan)",
+    duration: "March 2023 - Present",
+    description: [
+      "According to the position, I have to understand and work with both frontend & backend teams of the app. ",
+      "But due to junior level, I am working with frontend team mostly.",
+      "But side by side, I am learning backend technologies. The technologies are",
+      "Node.js, Express.js, Nest.js, MySql Database",
+
+    ],
+  },
+  {
+    title: "Frontend Developer MTO",
+    company: "Hysab Kytab (Pakistan)",
+    duration: "Aug 2023 - Feb 2024",
+    description: [
+      "The role of Management Trainee Officer(MTO) is different from Internship.",
+      "Here I have to know each and every thing of our product.",
+      "Like how the project is working and how I can contribute to it.",
+      "Make accurate and attractive designs w.r.t Figma Prototype.",
+    ],
+  },
+
+  {
+    title: "Frontend Developer Intern",
+    company: "Hysab Kytab (Pakistan)",
+    duration: "Feb 2023 - July 2023",
+    description: [
+      "In this internship, I worked closely with the frontend team to  built the UI of the Hysab Kytab App.",
+      "My core responsibility was to understand the flow of the app and then develop it.",
+      "I learned alot of technologies related to the frontend development.",
+      "React.js, Figma, Modular CSS, and responsive design.",
+    ],
+  },
+ 
+  {
     title: "Web Developer Intern",
     company: "The Sparks Foundation (Malaysia)",
     duration: "Jan 2023 - Feb 2023",
@@ -57,38 +93,6 @@ export const WorkExperienceData = [
     ],
   },
 
-  {
-    title: "Frontend Developer Intern",
-    company: "Hysab Kytab (Pakistan)",
-    duration: "Feb 2023 - July 2023",
-    description: [
-      "During this internship, I worked closely with the team to develop the Hysab Kytab App.",
-      "My core responsibility was to understand the flow of the app and then develop it.",
-      "I learned alot of things about the frontend development. For example",
-      "React.js, Figma, Modular CSS, and responsive design.",
-    ],
-  },
-  {
-    title: "Frontend Developer MTO",
-    company: "Hysab Kytab (Pakistan)",
-    duration: "Aug 2023 - Feb 2024",
-    description: [
-      "Worked on a project to develop an online money transfer system among the bank users.",
-      "Basically I have to show the transfer of amount from one user's account to another.",
-      "The project was developed by using the following technologies:",
-      "HTML5, CSS3, JavaScript & EcmaScript6, and Firebase.",
-    ],
-  },
-  {
-    title: "Junior Full Stack Developer",
-    company: "Hysab Kytab (Pakistan)",
-    duration: "March 2023 - Present",
-    description: [
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptate. ",
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptate. ",
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptate.",
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptate. ",
-
-    ],
-  },
+ 
+ 
 ];

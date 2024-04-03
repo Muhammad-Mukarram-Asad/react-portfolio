@@ -49,12 +49,12 @@ const Navbar = () => {
                 </a>
               </li>
               <li className={styles["menu_link"]}>
-                <a href="work" className={styles["menu_item"]}>
+                <a href="#workExperience" className={styles["menu_item"]}>
                   Work Experience
                 </a>
               </li>
               <li className={styles["menu_link"]}>
-                <a href="/contact" className={styles["menu_item"]}>
+                <a href="#contact" className={styles["menu_item"]}>
                   Contact Me
                 </a>
               </li>

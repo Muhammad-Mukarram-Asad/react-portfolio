@@ -63,6 +63,7 @@
 .hero_img > div > img{
     width: 25rem;
     transition: all 0.3s ease;
+    border-radius: 0.65rem;
 }
 .tech_icon{
     display: flex;

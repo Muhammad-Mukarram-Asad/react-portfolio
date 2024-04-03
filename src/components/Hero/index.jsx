@@ -33,13 +33,13 @@ const HeroSection = () => {
 
         <div>
           <div className={styles["tech_icon"]}>
-            <img src="https://cdn.iconscout.com/icon/free/png-256/free-html-5-1-1175208.png" alt="html" />
+            <img src="https://cdn1.iconfinder.com/data/icons/programing-development-7/24/html_html5_web_programing_developer-512.png" alt="html" />
           </div>
           <div className={styles["tech_icon"]}>
             <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png" alt="css" />
           </div>
           <div className={styles["tech_icon"]}>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/900px-JavaScript-logo.png" alt="js" />
+            <img src="https://icons.veryicon.com/png/o/business/vscode-program-item-icon/javascript-3.png" alt="js" />
           </div>
         </div>
       </section>
