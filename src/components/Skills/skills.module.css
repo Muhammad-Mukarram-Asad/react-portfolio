@@ -86,8 +86,20 @@ position: relative;
 
 @media (max-width: 600px)
 {
+
+    .skills{
+        padding-left: 0rem;
+    }
+
     .skills_section{
         padding: 0;
     }
+
+    .skills_content{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 3rem;
+    }
+
     
 }

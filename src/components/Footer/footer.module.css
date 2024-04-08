@@ -1,6 +1,24 @@
+@keyframes changeBorderColor {
+    0% {
+     border: 1px solid #3d3072; /* Initial border color */
+    }
+  
+    50%{
+     border: 1px solid dodgerblue;
+    }
+    100% {
+     border: 1px solid #423477; /* Final border color */
+    }
+  }
+
 .footer{
     font-size: 0.8rem;
     text-align: center;
     padding: 1rem;
-    background: linear-gradient(90deg, #3d3072 0%, #423477 100%);
+    background-color: linear-gradient(90deg, #3d3072 0%, #423477 100%);
+    border-radius: 10px;
+    border: 1px solid #423477;
+    animation: changeBorderColor 3s infinite alternate; 
+
 }
+

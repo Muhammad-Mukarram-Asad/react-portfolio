@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa";
- import logo from "../../assets/logo192.png";
+import logo from "../../assets/logo192.png";
 // import nameLogo from "../../assets/name_logo1.png"
 // import { Link } from "react-router-dom";
 const Navbar = () => {
@@ -33,9 +33,16 @@ const Navbar = () => {
     <main>
       <nav className={styles["nav_wrapper"]}>
         <section className={styles["nav_content"]}>
-          <img className={styles["logo_img"]} src={logo} alt="logo" />
-          <h1 className={styles["logo"]}>Web & App Developer</h1>
-         
+          {/* <img className={styles["logo_img"]} src={logo} alt="logo" /> */}
+          <div className={styles["img_heading_div"]}>
+            <img
+              className={styles["logo_img"]}
+              src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png"
+              alt="logo"
+            />
+            <h1 className={styles["logo_text"]}>Web & App Developer</h1>
+          </div>
+
           {/* Conditionally render navigation items based on showNav state */}
           {(window.innerWidth <= 768 && showNav) || window.innerWidth > 768 ? (
             <ul>

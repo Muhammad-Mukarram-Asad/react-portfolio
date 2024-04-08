@@ -1,0 +1,35 @@
+.projectCard_main_div{
+    /* relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] */
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    border: 1.5px solid #2A0E61;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.projectCard_main_div > img{
+    /* w-full object-contain */
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+
+.projectCard_content{
+    /* relative p-4 */
+    position: relative;
+    padding: 1rem;
+}
+
+.projectCard_content > h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.projectCard_content > p{
+    /* mt-2 text-gray-300 */
+    margin-top: 0.5rem;
+    color: #d1d5db; 
+
+}
