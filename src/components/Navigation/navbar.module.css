@@ -17,13 +17,19 @@
   max-width: 1300px;
 }
 
+.logo_img{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+
 .logo {
     width: 30%;
     height: auto;
     padding-left: 1rem;
     color: #6ee2f5;
     font-style: italic;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .nav_content ul {

@@ -2,16 +2,23 @@ import React from "react";
 import styles from "./contact.module.css";
 import ContactInfoCard from "./contactInfo";
 import ContactForm from "./contactForm";
+import linkedIn_logo from "../../assets/linkedin.svg"
+import instagram_logo from "../../assets/instagram.png"
+import github_logo from "../../assets/github.png"
+
 // import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 const ContactMe = () => {
+  const linkedInLink = "https://www.linkedin.com/in/mukarram-asad";
+  const githubLink = "https://github.com/Muhammad-Mukarram-Asad";
+  const instagramLink = "https://www.instagram.com/mukii_bhai?igsh=aTFzMWkweHV6djMy";
   return (
     <main className={styles["contact_container"]} id="contact">
       <h5>ContactMe</h5>
       <section className={styles["contact_content"]}>
         <div style={{ flex: 1 }}>
-          <ContactInfoCard iconUrl={"https://media.istockphoto.com/id/1456825464/vector/%C3%B0%C3%B1%C3%B0%C3%B0%C3%B0%C3%B0%C3%B1%C3%B0%C2%B5-rgb.jpg?s=612x612&w=0&k=20&c=SlsmakXzy1QqsIJC7UFWNfOUoO3ih0bqNFrTK7MTDXg="} text={"Email"} />
-          <ContactInfoCard iconUrl={"https://banner2.cleanpng.com/20180518/yk/kisspng-computer-icons-linkedin-5aff0283a31f04.0344839015266617636682.jpg"} text={"LinkedIn"} />
-          <ContactInfoCard iconUrl={"https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"} text={"Github"} />
+          <ContactInfoCard iconUrl={linkedIn_logo} text={"LinkedIn"} redirection={linkedInLink} />
+          <ContactInfoCard iconUrl={github_logo} text={"Github"} redirection={githubLink} />
+          <ContactInfoCard iconUrl={instagram_logo} text={"Instagram"} redirection={instagramLink} />
         </div>
         <div style={{ flex: 1 }}>
             <ContactForm />
