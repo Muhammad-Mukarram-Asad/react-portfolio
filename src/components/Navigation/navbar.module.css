@@ -12,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   margin: 0 auto;
   max-width: 1300px;
 }
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 15rem;
+  width: 20rem;
   height: auto;
   margin-left: 0.5rem;
 }
@@ -33,7 +33,7 @@
 }
 
 .logo_text {
-  width: 30%;
+  width: 90%;
   height: auto;
   padding-left: 0.5rem;
   color: #6ee2f5;
@@ -141,6 +141,7 @@
     top: 0;
     transition: all 0.5s ease;
     box-shadow: 0 29px 80px rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 0;
   }
 
   .logo_text {
@@ -210,6 +211,7 @@
     top: 0;
     transition: all 0.5s ease;
     box-shadow: 0 29px 80px rgba(0, 0, 0, 0.3);
+    padding: 0.8rem 0;
   }
 
   .logo_text {
