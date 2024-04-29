@@ -1,14 +1,16 @@
-import react from "react";
+// import react from "react";
+// import nextWebsite from "../../assets/NextWebsite.png"
+// import spaceImage from "../../assets/SpaceWebsite.png"
+
 import ProjectCard from "./projectCard";
 import styles from "./projects.module.css"
-import nextWebsite from "../../assets/NextWebsite.png"
-import cardImage from "../../assets/CardImage.png"
-import spaceImage from "../../assets/SpaceWebsite.png"
+// import cardImage from "../../assets/CardImage.png"
 import nextPortfolio from "../../assets/nextJS Portfolio Image.png"
 import finalYearProject from "../../assets/FYP Image.png"
 import eCommerceImage from "../../assets/Ecommerce Image.png"
 import udemyClone from "../../assets/udemy image.png"
 import quizApp from "../../assets/quiz app image.png"
+import blogApp from "../../assets/blogApp image.png"
 
 
 const Projects = () => {
@@ -55,9 +57,10 @@ const Projects = () => {
             from scratch and used only Two technologies, HTML5 & CSS3. It's not responsive but it's worth looking in Laptop/Desktop screens "
           />
           <ProjectCard
-            src={cardImage}
-            title="Interactive Website Cards"
-            description="This is a random project in which I just try to make a cards with good UI for better experience and practicing my skills. "
+            src={blogApp}
+            title="CRUD Blog App"
+            description="It's simple blog app made in React JS. It's a CRUD application. In this web application, you can easily create, edit, update and delete blog posts. The blogs
+            are saved in session storage so you can easily access them within your session time. "
           />
           <ProjectCard
             src={quizApp}
