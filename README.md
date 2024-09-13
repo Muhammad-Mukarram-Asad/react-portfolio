@@ -1,4 +1,6 @@
 # Getting Started with Create React App
+# Project Deployed Link:  
+https://mukarram-portfolio.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
