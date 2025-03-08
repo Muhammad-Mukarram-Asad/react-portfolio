@@ -9,7 +9,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      // Show nav items by default if screen size is greater than 768px
       if (window.innerWidth > 768) {
         setShowNav(true);
       } else {
@@ -17,7 +16,6 @@ const Navbar = () => {
       }
     };
 
-    // Call handleResize initially and add event listener for resize
     handleResize();
     window.addEventListener("resize", handleResize);
 
@@ -28,6 +26,8 @@ const Navbar = () => {
   const handleNavigation = () => {
     setShowNav(!showNav);
   };
+
+  console.log("showNav", showNav);
 
   return (
     <main>
@@ -40,14 +40,14 @@ const Navbar = () => {
               src="https://cdn-icons-png.flaticon.com/128/4997/4997543.png"
               alt="logo"
             />
-            <h1 className={styles["logo_text"]}>Web & App Developer</h1>
+            <h1 className={styles["logo_text"]}>Full Stack Developer</h1>
           </div>
 
           {/* Conditionally render navigation items based on showNav state */}
-          {(window.innerWidth <= 768 && showNav) || window.innerWidth > 768 ? (
+          {(window.innerWidth <= 770 && showNav) || window.innerWidth > 770 ? (
             <ul>
               <li className={styles["menu_link"]}>
-                <a href="/" className={styles["menu_item"]}>
+                <a href="#home" className={styles["menu_item"]}>
                   Home
                 </a>
               </li>

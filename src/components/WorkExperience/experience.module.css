@@ -3,11 +3,34 @@
     position: relative;
 }
 
-.experience_container >h5{
-    font-size: 1.5rem;
+.experience_heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
+    cursor: pointer;
+  position: relative;
 }
+
+.experience_heading::before {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #a993fe, #7e61e7 100%);
+    position: absolute;
+    border-radius: 0.5rem;
+    bottom: -0.6rem;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .experience_heading:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+    width: 30%;
+  }
 
 .arrow_right, .arrow_left{
     width: 2.2rem;
@@ -51,9 +74,8 @@
 
 @media (max-width: 768px)
 {
-    .experience_container >h5{
-        font-size: 1.2rem;
-        margin-bottom: 2rem;
+    .experience_heading{
+        font-size: 2rem;
     }
     .arrow_left{
         left: -1rem;

@@ -5,6 +5,7 @@ import ContactForm from "./contactForm";
 import linkedIn_logo from "../../assets/linkedin.svg"
 import instagram_logo from "../../assets/instagram.png"
 import github_logo from "../../assets/github.png"
+import { motion } from "framer-motion";
 
 // import { FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 const ContactMe = () => {
@@ -13,7 +14,14 @@ const ContactMe = () => {
   const instagramLink = "https://www.instagram.com/mukii_bhai?igsh=aTFzMWkweHV6djMy";
   return (
     <main className={styles["contact_container"]} id="contact">
-      <h5>ContactMe</h5>
+      <motion.div
+        initial={{ opacity: 0, x: -1000 }} // Starts from extreme left of viewport
+        whileInView={{ opacity: 1, x: 0 }} // Ends at center
+        transition={{ duration: 1.0, delay: 0.5 }}
+      >
+
+        <h5 className={styles["contact_heading"]}>Contact Me</h5>
+        </motion.div>
       <section className={styles["contact_content"]}>
         <div style={{ flex: 1 }}>
           <ContactInfoCard iconUrl={linkedIn_logo} text={"LinkedIn"} redirection={linkedInLink} />

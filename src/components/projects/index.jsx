@@ -1,77 +1,73 @@
-// import react from "react";
-// import nextWebsite from "../../assets/NextWebsite.png"
-// import spaceImage from "../../assets/SpaceWebsite.png"
-
-import ProjectCard from "./projectCard";
-import styles from "./projects.module.css"
-// import cardImage from "../../assets/CardImage.png"
+// Projects.jsx
+import React from 'react';
+import ProjectCard from './projectCard';
+import styles from './projects.module.css';
+// Assuming you have these images imported
 import nextPortfolio from "../../assets/nextJS Portfolio Image.png"
 import finalYearProject from "../../assets/FYP Image.png"
 import eCommerceImage from "../../assets/Ecommerce Image.png"
 import udemyClone from "../../assets/udemy image.png"
 import quizApp from "../../assets/quiz app image.png"
 import blogApp from "../../assets/blogApp image.png"
-
+import { motion } from 'framer-motion';
 
 const Projects = () => {
-    return (
-      <div
-        className={styles["projects_main_div"]}
-        id="projects"
-      >
-        <h1>
-          My Projects
-        </h1>
-  
-        {/* 1st 3 projects */}
-        <div className={styles["projectsCard_main_div_holder"]}>
-          <ProjectCard
-            src={nextPortfolio}
-            title="Modern Next.js Portfolio"
-            description="The project is basically for practicing Next.js which is a React framework. So try to make a portfolio which consist of different technologies like Tailwind css, 
-            Framer motion, React router dom, React icons, React-slick, React-scroll, and more. "
-          />
-          <ProjectCard
-            src={eCommerceImage}
-            title="Ecommerce Website"
-            description="The project is related to my Frontend Development. It's basically an Ecommerce Website which is made using React JS. So try to practicing the state management so for that
-             I used React Context API for state management and React Router for routing."
-          />
-          <ProjectCard
-            src={finalYearProject}
-            title="Sportify Cricket Scoring App"
-            description="This project is related to myFinal Year Project(FYP) of my Bachelor's Degree in Computer Science(BSCS). It's basically a cricket scoring app 
-            which is made using React JS for Frontend, Node & Express JS for Backend and MongoDB for Database. "
-          />
-        </div>
-  
-  
-        {/* 2nd 3 projects */}
-  
-        <div className={styles["projectsCard_main_div_holder"]}>
+  const projectsData = [
+    {
+      src: nextPortfolio,
+      title: "Modern Next.js Portfolio",
+      description: "A practice project using Next.js with Tailwind CSS, Framer Motion, React Router DOM, React Icons, React-slick, and React-scroll for a dynamic portfolio."
+    },
+    {
+      src: eCommerceImage,
+      title: "Ecommerce Website",
+      description: "Frontend-focused ecommerce site built with React JS, using Context API for state management and React Router for navigation."
+    },
+    {
+      src: finalYearProject,
+      title: "Sportify Cricket Scoring App",
+      description: "Final Year Project: A cricket scoring app using React JS (Frontend), Node/Express JS (Backend), and MongoDB (Database)."
+    },
+    {
+      src: udemyClone,
+      title: "Udemy Clone",
+      description: "Early web dev project cloning Udemy using HTML5 and CSS3. Optimized for desktop/laptop viewing."
+    },
+    {
+      src: blogApp,
+      title: "CRUD Blog App",
+      description: "A React JS CRUD blog app with session storage for creating, editing, updating, and deleting posts."
+    },
+    {
+      src: quizApp,
+      title: "Quiz Website",
+      description: "Web development quiz app with 10 questions, built using HTML, CSS, and JavaScript fundamentals."
+    }
+  ];
 
-        <ProjectCard
-            src={udemyClone}
-            title="Udemy Clone"
-            description="During my initial stage of learning web development, I made the clone of a very popular educational platform Udemy. I made this clone
-            from scratch and used only Two technologies, HTML5 & CSS3. It's not responsive but it's worth looking in Laptop/Desktop screens "
-          />
+  return (
+    <section className={styles.projectsSection} id="projects">
+
+      <motion.div
+        initial={{ opacity: 0, x: -1000 }} // Starts from extreme left of viewport
+        whileInView={{ opacity: 1, x: 0 }} // Ends at center
+        transition={{ duration: 1.0, delay: 0.5 }}
+      >
+
+        <h5 className={styles["projects_heading"]}>Projects</h5>
+        </motion.div>
+      <div className={styles.projectsGrid}>
+        {projectsData.map((project, index) => (
           <ProjectCard
-            src={blogApp}
-            title="CRUD Blog App"
-            description="It's simple blog app made in React JS. It's a CRUD application. In this web application, you can easily create, edit, update and delete blog posts. The blogs
-            are saved in session storage so you can easily access them within your session time. "
+            key={index}
+            src={project.src}
+            title={project.title}
+            description={project.description}
           />
-          <ProjectCard
-            src={quizApp}
-            title="Quiz Website"
-            description="It's an assignment project in which I have to make a quiz app related to web development. It consists of total
-            ten questions and at the end you can easily know your result as well. This project was made by using the core 
-            fundamentals of web development which are HTML, CSS, and JavaScript. "
-          />
-        </div>
+        ))}
       </div>
-    );
-  };
-  
-  export default Projects;
+    </section>
+  );
+};
+
+export default Projects;

@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./contactInfo.module.css";
 
 const ContactInfoCard = ({ iconUrl, text, redirection }) => {
-  console.log("iconUrl", iconUrl);
   return (
     <a className={styles["link"]} href={redirection} target="_blank" rel="noopener noreferrer">
     <main className={styles["contact_detail_card"]}>

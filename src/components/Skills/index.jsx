@@ -4,9 +4,7 @@ import { SKILLS } from "../../utils/data";
 import SkillsCardSection from "../SkillsCard";
 import SkillsInfoSection from "../SkillsInfo";
 import { motion } from "framer-motion";
-import {
-  slideInFromTop,
-} from "../../utils/motion";
+// import {slideInFromTop} from "../../utils/motion";
 
 const SkillSection = () => {
   const [selectedSkill, setSelectedSkill] = useState(SKILLS[0]);
@@ -21,8 +19,19 @@ const SkillSection = () => {
       className={styles["main_motion_div"]}
     >
       <main className={styles["skills_section"]} id="skills">
-          <h5>Technical Proficiency</h5>
-        <motion.div variants={slideInFromTop}>
+      <motion.div
+        initial={{ opacity: 0, x: -1000 }} // Starts from extreme left of viewport
+        whileInView={{ opacity: 1, x: 0 }} // Ends at center
+        transition={{ duration: 1.0, delay: 0.5 }}
+      >
+
+        <h5 className={styles["skills_heading"]}>Technical Proficiency</h5>
+        </motion.div>
+        <motion.div
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          transition={{ duration: 1.0, delay: 0.5 }}
+        >
           <section className={styles["skills_content"]}>
             <div className={styles["skills"]}>
               {SKILLS.map((item, index) => (
@@ -31,7 +40,7 @@ const SkillSection = () => {
                   title={item.title}
                   iconUrl={item.icon}
                   isActive={item.title === selectedSkill.title}
-                  onClick={() => handleSelectSkill(item)}
+                  handleClick={() => handleSelectSkill(item)}
                 />
               ))}
             </div>

@@ -1,10 +1,10 @@
-.skills_section{
-margin: 4rem 0;
-position: relative;
+.skills_section {
+    margin: 4rem 0;
+    position: relative;
 }
 
 .skills_section::before,
-.skills_section::after{
+.skills_section::after {
     content: "";
     width: 28rem;
     height: 28rem;
@@ -15,91 +15,123 @@ position: relative;
     filter: blur(200px);
 }
 
-.skills_section::after{
+.skills_section::after {
     top: -3rem;
     left: -5rem;
 }
 
-.skills_section::before{
+.skills_section::before {
     bottom: 0;
     right: 0;
     background-color: #9e51b9;
 }
 
-
-
-.skills_section > h5{
-    font-size: 1.5rem;
+.skills_heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
     font-weight: 600;
     margin-bottom: 3.5rem;
+    cursor: pointer;
+  position: relative;
 }
 
-.skills_content{
+.skills_heading::before {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    background: linear-gradient(90deg, #a993fe, #7e61e7 100%);
+    position: absolute;
+    border-radius: 0.5rem;
+    bottom: -0.6rem;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .skills_heading:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+    width: 40%;
+  }
+
+
+
+.skills_content {
     display: flex;
     align-items: flex-start;
     gap: 3rem;
 }
 
-.skills{
+.skills {
     flex: 1;
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
 }
-.skills_info{
+
+.skills_info {
     flex: 1;
 }
 
-@media (max-width: 1025px)
-{
-    .skills{
+@media (max-width: 1025px) {
+    .skills {
         padding-left: 1rem;
     }
+
     .skills,
-    .skills_content{
+    .skills_content {
         grid-gap: 2rem;
     }
 }
 
-@media (max-width: 768px)
-{
-    .skills_content{
+@media (max-width: 768px) {
+    .skills_content {
         display: flex;
         flex-direction: column-reverse;
         gap: 3rem;
     }
 
-    .skills, .skills_info{
+    .skills_heading {
+        font-size: 2rem;
+    }
+
+    .skills,
+    .skills_info {
         width: 100%;
     }
 
-    .skills_section > h5{
+    .skills_section>h5 {
         font-size: 1.3rem;
         margin-bottom: 2rem;
     }
 
-    .skills_section::after, .skills_section::before{
+    .skills_section::after,
+    .skills_section::before {
         width: 18rem;
         height: 18rem;
     }
 }
 
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
 
-    .skills{
+    .skills {
         padding-left: 0rem;
     }
 
-    .skills_section{
+    .skills_heading {
+        font-size: 1.5rem;
+    }
+
+    .skills_section {
         padding: 0;
     }
 
-    .skills_content{
+    .skills_content {
         display: flex;
         flex-direction: column-reverse;
         gap: 3rem;
     }
 
-    
+
 }
