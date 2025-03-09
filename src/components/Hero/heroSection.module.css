@@ -6,7 +6,6 @@
   width: 100%;
   padding: 0 20px;
   margin-top: 10px;
-  /* z-index: 20; */
 }
 
 .Welcome-box {
@@ -186,8 +185,13 @@
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
+
+  .main_motion_div{
+    padding: 0;
+  }
   .hero_section {
     margin-top: 15%;
+    overflow-x: hidden;
   }
 
   .hero_content > h2 {
@@ -202,15 +206,24 @@
     font-size: 0.8rem;
     line-height: 1.3rem;
   }
-
+/* 
   .hero_img {
     gap: 2rem;
     margin-top: 12rem;
+  } */
+
+  .hero_img > div {
+    gap: 1rem;
   }
 
   .hero_img > div > img {
+    gap: 2rem;
     width: 14rem;
     border-radius: 1rem;
+  }
+
+  .tech_icon_main_div{
+    width: 19rem;
   }
 
   .tech_icons_img_div > img {
@@ -253,7 +266,7 @@
 
   .hero_img > div {
     gap: 1rem;
-    margin-left: 2.5rem;
+    margin-left: 0.5rem;
   }
 
   .hero_img > div > img {

@@ -1,6 +1,7 @@
 .skills_section {
     margin: 4rem 0;
-    position: relative;
+    min-height: 100vh;
+    overflow: visible !important;
 }
 
 .skills_section::before,
@@ -27,6 +28,7 @@
 }
 
 .skills_heading {
+    display: block;
     font-size: 2.5rem;
     text-align: center;
     color: white;
@@ -116,7 +118,7 @@
 @media (max-width: 600px) {
 
     .skills {
-        padding-left: 0rem;
+        padding-left: 1rem;
     }
 
     .skills_heading {
